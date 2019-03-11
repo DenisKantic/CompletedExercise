@@ -25,7 +25,11 @@ public class Main {
             if (isValidID(id)) {
                 int choise;
                 do {
-                    System.out.println("Enter your choise: ");
+                    System.out.println("Enter your choise: " +
+                            "\n1. check balance" +
+                            "\n2. withdraw" +
+                            "\n3. deposit" +
+                            "\n4. exit");
                     choise = s.nextInt();
                     if (isValidChoise(choise)) {
                         mainMenu(choise, atm);
